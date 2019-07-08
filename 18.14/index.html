@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>18.14</title>
+    <style>
+        .card {
+            width: 800px;
+            background: #ccc;
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="card" v-pin:true.bottom.right="card1.pinned">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aliquam harum natus inventore et, architecto consequatur laboriosam voluptatibus. Aut in inventore
+            consequatur commodi enim laudantium eveniet nobis deleniti architecto. Unde, recusandae.
+            <button @click="card1.pinned=!card1.pinned">固定/取消固定</button>
+        </div>
+        <div class="card" v-pin.top.left="card2.pinned">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            harum natus inventore et, architecto consequatur laboriosam voluptatibus. Aut in inventore consequatur
+            commodi enim laudantium eveniet nobis deleniti architecto. Unde, recusandae.
+            <a href="#" @click="card2.pinned=!card2.pinned">固定/取消固定</a>
+        </div>
+        <div class="card" v-pin="false">Lorsem ipsum dolor sit amet consectetur adipisicing elit. Aliquam harum natus
+            inventore et, architecto consequatur laboriosam voluptatibus. Aut in inventore consequatur commodi enim
+            laudantium eveniet nobis deleniti architecto. Unde, recusandae.  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis in cumque possimus eligendi voluptate,
+            nostrum consectetur saepe dolorem, assumenda voluptas quo sunt facilis, error blanditiis odio itaque fuga
+            ducimus voluptates.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia aspernatur provident ea distinctio est,
+            deleniti, incidunt corporis excepturi aperiam eum dolorum earum minus assumenda culpa quam et atque labore!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt itaque distinctio porro tenetur cumque sunt
+            iure veritatis? Ut quisquam deserunt, voluptates quae, qui ratione assumenda, maiores eligendi aut non
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias optio tempora sed ut non eum dolorum? Sequi,
+            id amet! Perspiciatis earum alias maxime distinctio eos dicta accusamus obcaecati saepe ducimus?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur quos consequatur, unde quod, et officiis quis
+            nemo vel, fuga magni dignissimos impedit provident ratione delectus a! Pariatur eos ipsam accusamus?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci labore mollitia id doloremque sapiente!
+            Quaerat excepturi esse quod ab! Recusandae magnam quae eligendi est enim dicta vitae rem fuga itaque!</div>
+      
+        <div class="card" v-pin="false">Lorsem ipsum dolor sit amet consectetur adipisicing elit. Aliquam harum natus
+            inventore et, architecto consequatur laboriosam voluptatibus. Aut in inventore consequatur commodi enim
+            laudantium eveniet nobis deleniti architecto. Unde, recusandae.</div>
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis in cumque possimus eligendi
+            voluptate, nostrum consectetur saepe dolorem, assumenda voluptas quo sunt facilis, error blanditiis odio
+            itaque fuga ducimus voluptates.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia aspernatur provident ea distinctio est,
+            deleniti, incidunt corporis excepturi aperiam eum dolorum earum minus assumenda culpa quam et atque labore!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt itaque distinctio porro tenetur cumque
+            sunt iure veritatis? Ut quisquam deserunt, voluptates quae, qui ratione assumenda, maiores eligendi aut non
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias optio tempora sed ut non eum dolorum?
+            Sequi, id amet! Perspiciatis earum alias maxime distinctio eos dicta accusamus obcaecati saepe ducimus?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur quos consequatur, unde quod, et officiis
+            quis nemo vel, fuga magni dignissimos impedit provident ratione delectus a! Pariatur eos ipsam accusamus?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci labore mollitia id doloremque sapiente!
+            Quaerat excepturi esse quod ab! Recusandae magnam quae eligendi est enim dicta vitae rem fuga itaque!</div>
+
+        <div class="card" v-pin="false">Lorsem ipsum dolor sit amet consectetur adipisicing elit. Aliquam harum natus
+            inventore et, architecto consequatur laboriosam voluptatibus. Aut in inventore consequatur commodi enim
+            laudantium eveniet nobis deleniti architecto. Unde, recusandae.Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Officiis in cumque possimus eligendi voluptate,
+            nostrum consectetur saepe dolorem, assumenda voluptas quo sunt facilis, error blanditiis odio itaque fuga
+            ducimus voluptates.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia aspernatur provident ea distinctio est,
+            deleniti, incidunt corporis excepturi aperiam eum dolorum earum minus assumenda culpa quam et atque labore!s
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt itaque distinctio porro tenetur cumque
+            sunt
+            iure veritatis? Ut quisquam deserunt, voluptates quae, qui ratione assumenda, maiores eligendi aut non
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias optio tempora sed ut non eum dolorum?
+            Sequi,
+            id amet! Perspiciatis earum alias maxime distinctio eos dicta accusamus obcaecati saepe ducimus?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur quos consequatur, unde quod, et officiis
+            quis
+            nemo vel, fuga magni dignissimos impedit provident ratione delectus a! Pariatur eos ipsam accusamus?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci labore mollitia id doloremque sapiente!
+            Quaerat excepturi esse quod ab! Recusandae magnam quae eligendi est enim dicta vitae rem fuga itaque!</div>
+
+
+    </div>
+    <script src="../lib/vue.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
